@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Author:	COR Edited by PW
+	Date:	2018
+		
+	-->
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="126.0" prefWidth="221.0"
+	xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/8.0.141">
+	<children>
+		<MenuBar layoutX="28.0" layoutY="14.0" prefHeight="26.0"
+			prefWidth="167.0">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem fx:id="listUserMenuItem"
+							mnemonicParsing="false" onAction="#showUsers" text="Users" />
+						<MenuItem fx:id="listPlayListMenuItem"
+							mnemonicParsing="false" onAction="#showPlayList" text="Playlists" />
+						<MenuItem fx:id="listMusicMenuItem"
+							mnemonicParsing="false" onAction="#showMusic" text="Music" />
+							
+						<MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Play">
+					<items>
+						<MenuItem mnemonicParsing="false" text="Music" />
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Help">
+					<items>
+						<MenuItem fx:id="checkUserMenuItem"
+							mnemonicParsing="false" onAction="#checkDBUsers"
+							text="Check Users Table " />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</children>
+</AnchorPane>

@@ -1,0 +1,1 @@
+select * from Music LEFT JOIN Playlist p ON Music.musicID = p.musicID where p.userID = 1;
